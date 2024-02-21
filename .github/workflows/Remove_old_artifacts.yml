@@ -2,8 +2,8 @@ name: Remove old artifacts
 
 on:
   schedule:
-    # Every day at 1am
-    - cron: '0 1 * * *'
+    # 每天UTC时间20点，即北京时间4点
+    - cron: '0 20 * * *'
 
 jobs:
   remove-old-artifacts:
